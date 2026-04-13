@@ -1,0 +1,646 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(12, 12, 30);
+    position: fixed;
+    z-index: 999;
+}
+.logo{
+    width: 170px;
+    height: 70px;
+    margin-left: 90px;
+}
+.list{
+    list-style: none;
+    margin: -47px 150px 100px 0px;
+    font-size: 20px;
+}
+.list a{
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+    color: white;
+    margin-left: 50px;
+}
+.header div{
+    height: 4px;
+    float: right;
+}
+.home{
+    margin: 25px -97px 0px 0px;
+    width: 45px;
+
+}
+.coaches{
+    margin: 25px -145px 0px 0px;
+    width: 90px;
+}
+.transformations{
+    margin: 25px -178px 0px 0px; 
+    width: 120px;   
+}
+.programs{
+    margin: 25px -123px 0px 0px;
+    width: 70px;
+}
+.shop{
+    margin: 25px -89px 0px 0px;
+    width: 37px;
+}
+.About{
+    margin: 25px -98px 0px 0px;
+    width: 46px;
+    background-color: orange;
+}
+.line{
+    position: relative;
+    cursor: pointer;
+}
+.line::after{
+    content:" ";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: orange;
+    opacity: 0;
+}
+.line:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 1s;
+}
+/* ////////////////////////////////////////////////////////////////// */
+.there{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../../images/68bf95b780788f0e530d9c3e_gyms-hero.webp);
+    background-size: cover;
+    text-align: center;
+}
+.there-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+.there-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+.there-title{
+    font-size: 30px;
+    color: white;
+}
+.there-p{
+    font-size: 16px;
+    color: rgba(255, 255, 255, .7);
+}
+.there-content button{
+    letter-spacing: 1.5px;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    width: 180px;
+    height: 70px;
+    font-weight: 800;
+    margin: 15px 14px 0px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.there-start , .there-explore{
+    background-color:rgb(255, 166, 0);
+    color: black;
+    border: 2px solid orange;
+}
+.there-explore{
+    color: orange;
+    background-color: rgba(0, 0, 0, .5);
+}
+.there-start:hover{
+    color: orange;
+    background-color: rgba(0, 0, 0, .5);
+}
+.there-explore:hover{
+    background-color:rgb(255, 166, 0);
+    color: black;
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+.why{
+    text-align: center;
+    padding-top: 65px;
+}
+.why-title , .services-title , .fitness-title , .find-title , .squad-title , .insights-title{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.why-title-line , .services-title-line , .fitness-title-line , .find-title-line , .squad-title-line , .insights-title-line{
+    width: 80px;
+    height: 4px;
+    background-color: rgb(187, 121, 0);
+    margin: auto;
+}
+.why-container , .services-container , .fitness-container , .find-container , .captain-container , .captain-container , .squad-container , .insights-container{
+    width: 80%;
+    margin: auto;
+}
+.why-parent{
+    height: 60vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 100px;
+}
+.why-div{
+    float: left;
+    width: 30%;
+    height: 210px;
+    text-align: center;
+    border: .5px solid rgb(180, 180, 180);
+    padding-top: 30px;
+    position: relative;
+}
+.why-div2{
+    margin: 0px 5%;
+    padding: 30px 10px;
+}
+.div-title{
+    line-height: 2;
+    word-spacing: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.div-p{
+    font-size: 16px;
+    line-height: 1.2;
+    opacity: .8;
+}
+.why-div:hover .div-p{
+    color: rgb(179, 126, 27);
+}
+.why-div a{
+    line-height: 2.5;
+    text-decoration: none;
+    font-size: 19px;
+    cursor: pointer;
+}
+.why-div:hover .why-link{
+    color: chocolate;
+}
+.why-link:hover{
+    font-size: 21px;
+    text-decoration: underline;
+}
+.why-content{
+    position: absolute;
+    z-index: 2;
+}
+.why-content i{
+    font-size: 30px;
+    color: rgb(85, 85, 180);
+}
+.why-div:hover .why-content i{
+    color: rgb(160, 109, 13);
+}
+/* //////////////////////////////////////////////////////////////////////////// */
+.services-title , .fitness-title , .find-title , .squad-title , .insights-title{
+    text-align: center; 
+}
+.services-title-line{
+    width: 50px;
+    margin-bottom: 70px;
+}
+.services-parent{
+    text-align: center;
+}
+.services-div{
+    float: left;
+    margin-left: 0px 30%;
+    background-color: white;
+    padding: 20px 10px;
+    position: relative;
+}
+.services-div2 , .services-div5{
+    margin: 0px 5%;
+}
+.services-overlay{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+    visibility: hidden;
+}
+.services-div:hover .services-overlay{
+    visibility: visible;
+}
+.services-div-content h2 , .services-div-content p{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.services-div-content p{
+    color: rgba(255, 255, 255, .7);
+}
+.services-icons i{
+    font-size: 25px;
+    color: orange;
+    overflow: auto;
+    line-height: 40px;
+}
+.services-icon{
+    float: left;
+    width: 50px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: 5px;
+}
+.services-icons{
+    margin: 13px 0px 0px 30px ;
+}
+.services-icon:hover{
+    width: 55px;
+    height: 45px;
+}
+/* ////////////////////////////////////////////////////////////////////// */
+.fitness-section{
+    height: 80vh;
+    margin-top: 100px;
+}
+.fitness-parent{
+    margin-top: 80px;
+}
+.fitness-parent2{
+    margin-top: 30px;
+}
+.fitness-div{
+    width: 320px;
+    height: 135px;
+    float: left;
+    border: .5px solid gray;
+    margin-left:0px 30%;
+    padding: 20px 15px;
+    position: relative;
+}
+.fitness-div2 , .fitness-div5{
+    margin:0px 5%;
+}
+.fitness-div h2{
+    margin-left: 20px;
+}
+.fitness-div p{
+    margin:10px 0px 10px 50px;
+    text-transform: capitalize;
+    opacity: .7;
+}
+.fitness-div i , .fitness-div h2{
+    font-size: 25px;
+    color: orange;
+    display: inline;
+}
+.fitness-div h2{
+    color: black;
+}
+.fitness-div:hover .fitness-icon{
+    color: rgb(28, 28, 142);
+}
+/* /////////////////////////////////////////////////////////////////////////////// */
+.gym-section{
+    height: 75vh;
+    width: 50%;
+    margin-top: 60px;
+    padding-left: 150px;
+}
+.gym-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+    font-size: 27px;
+}
+.gym-title-line{
+    width: 50px;
+    height: 4px;
+    background-color: rgb(187, 121, 0) ;
+}
+.gym-p{
+    opacity: .8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px 0px 20px 0px;
+}
+.gym-item{
+    line-height: 2;
+}
+.gym-item i , .gym-item p{
+    display: inline;
+}
+.gym-item i{
+    color: orange;
+}
+.gym-img{
+    margin:-280px 0px 0px 500px;
+}
+.gym-img li{
+    color: rgb(141, 136, 136);
+    font-size: 30px;
+    margin-left: -17px;
+}
+.gym-img li:hover{
+    color: orange;
+}
+.gym-img-doted{
+    display: flex;
+    margin-left: 350px;
+}
+/* ///////////////////////////////////////////////////////////////////////// */
+.active-section{
+    height: 70vh;
+}
+.active-img{
+    background-image: url(../../../images/captain.webp);
+}
+.active-overlay , .captain-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+.services-div-content , .active-parent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.active-parent{
+    width: 100%;
+}
+.active-statistics{
+    float: left;
+    margin-left: 13%;
+    text-align: center;
+}
+.active-statistics i{
+    font-size: 25px;
+    color: orange;
+    line-height: 1.5;
+}
+.active-statistics h2 ,.active-statistics p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.active-statistics p{
+    opacity: .7;
+}
+/* ////////////////////////////////////////////////////////////////////////////// */
+.find-section , .captain-section{
+    height: 80vh;
+}
+.find-parent , .captain-parent , .fitness-parent , .services-parent , .why-parent , .squad-parent , .insights-parent{
+    overflow: auto;
+}
+.find-package:hover{
+    background-color: rgb(170, 169, 169);
+}
+.find-package2{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.find-package h2{
+    font-size: 17px;
+    word-spacing: 5px;
+}
+.find-package-price{
+    width: 90px;
+    height: 100px;
+    border: 2px solid rgb(199, 139, 28);
+    border-radius: 45px;
+    margin: 15px 120px;
+    padding: 20px 0px;
+}
+.find-package-price:hover{
+    background-color: rgb(171, 147, 50);
+    border: 0;
+}
+.find-package-price h2{
+    font-size: 30px;
+}
+.find-package p{
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgb(36, 35, 35);
+}
+.find-package button{
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.find-package button:hover{
+    background-color: rgb(50, 50, 90);
+    color: white;
+    border: 2px solid white;
+}
+/* ///////////////////////////////////////////////////////////////////////// */
+.captain-background , .active-img{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    position: relative;
+    height: 50vh;
+}
+.captain-background{
+    background-image: url(../../../images/categories-1619972086.jpg);
+}
+.captain-overlay{
+    background-color: rgba(0, 0, 0, .75);
+}
+.captain-member{
+    float: left;
+    width: 50%;
+    overflow: auto;
+    margin-top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.captain-member-right{
+    padding-left: 70px;
+}
+.captain-member img{
+    border-radius: 60px;
+    float: left;
+}
+.captain-member-info{
+    margin: 20px 0px 0px 15px;
+    float: left;
+}
+.member-view{
+    margin-top: 100px;
+    color: rgb(199, 198, 198);
+}
+.captain-member-info h2{
+    color: white;
+}
+.member-goal{
+    color: rgb(203, 142, 28);
+}
+/* ////////////////////////////////////////////////////////////////// */
+.squad-div2{
+    margin:50px 5%;
+}
+.squad-img{
+    position: relative;
+}
+.squad-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+}
+.squad-img:hover .squad-overlay , .squad-img:hover .squad-overlay a{
+    background-color: rgba(0, 0, 0, .5);
+}
+.footer-icons i , .squad-overlay a{
+    color: orange;
+    font-size: 30px;
+}
+.squad-overlay a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    visibility: hidden;
+}
+.squad-img:hover .squad-overlay a{
+    visibility: visible;
+}
+.squad-overlay i , .footer-icons i{
+    line-height: 50px;
+}
+.squad-name{
+    color: white;
+}
+.squad-div:hover .squad-name{
+    color: orange;
+    transition: 2s;
+    text-decoration: underline;
+} 
+.squad-div:hover .squad-specialization{
+    color: white;
+    transition: 2s;
+}
+.squad-div::after , .insights-div::after , .fitness-div::after , .why-div::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .3;
+}
+.squad-div:hover::after , .insights-div:hover::after , .fitness-div:hover::after , .why-div:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.fitness-div::after , .why-div::after{
+    width: 0;
+}
+/* /////////////////////////////////////////////////////////////////// */
+.insights-title{
+    margin-top: 100px;
+}
+.insights-section{
+    background-color: rgb(233, 233, 233);
+}
+.insights-div , .squad-div , .find-package{
+    float: left;
+    width: 30%;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    padding: 0px 25px 70px 15px;
+}
+.squad-div{
+    background-color: rgb(112, 112, 112);
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 13px;
+}
+.find-package{
+    border: .5px solid gray;
+    height: 350px;
+    text-align: center;
+    padding: 20px 0px;
+    border-radius: 10px;
+}
+.insights-div2{
+    margin:50px 5%;
+}
+.insights-icons{
+    margin-top: 15px;
+    position: relative;
+}
+.insights-div i , .insights-div span{
+    font-size: 12px;
+}
+.insights-div i{
+    color: rgb(187, 123, 3);
+}
+.insights-div span{
+    margin-right: 7px;
+}
+.insights-div-title{
+    font-size: 19px;
+    margin: 15px 0px;
+}
+.insights-icons p{
+    margin-bottom: 17px;
+    opacity: .7;
+}
+.insights-icons a{
+    text-decoration: none;
+    font-size: 17px;
+    color: blue;
+    position: absolute;
+    z-index: 8;
+}
+.insights-icons a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+/* ///////////////////////////////////////////////////////////////////////// */
+.footer{
+    height: 50vh;
+    background-color: rgb(90, 89, 89);
+    text-align: center;
+    padding-top: 50px;
+}
+.footer-icons{
+    overflow: auto;
+    margin: 20px 0px 10px 530px;
+}
+.footer-icons div{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    float: left;
+    background-color: white;
+}
+.footer-icons div:hover{
+    background-color: rgba(255, 255, 255, .6);
+}
+.footer-icons i:hover{
+    color: blue;
+}
